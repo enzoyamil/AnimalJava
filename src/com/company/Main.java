@@ -3,9 +3,14 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-Perro p =new Perro("wanko","gris","chiguagua");
-Gato g = new Gato("pez","blanco");
+AnimalDomestico g;
+AnimalDomestico p;
+Veterinario v;
+g=new Gato("fofy","gris");
+p=new Perro("wanko","blanco","chapi");
+v=new Veterinario(p);
 g.saludar();
 p.saludar();
+v.curar();
     }
 }
